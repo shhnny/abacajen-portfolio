@@ -138,20 +138,56 @@ h2 {
   gap: 14px;
 }
 
+/* The outer card sets the size and the 3D space */
 .skill-card {
-  background: #f5f6f3;
-  padding: 30px;
-  min-height: 160px;
-  border: 1px solid #dedcd3;
-  border-radius: 16px;
-  transition: transform 0.25s ease, background 0.25s ease,
-    border-color 0.25s ease;
+  height: 200px;
+  perspective: 1000px;
 }
 
-.skill-card:hover {
-  background: #ecefe9;
-  border-color: #782b42;
-  transform: translateY(-5px);
+/* The inner part is what actually turns */
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.skill-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back sit on top of each other */
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background: #f5f6f3;
+  padding: 30px;
+  border: 1px solid #dedcd3;
+}
+
+/* The back starts turned around, so it's hidden until the flip */
+.card-back {
+  transform: rotateY(180deg);
+  padding: 20px;
+  background: #f5f6f3;
+  border: 1px solid #dedcd3;
+}
+
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .skill-card h3 {
