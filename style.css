@@ -10,7 +10,7 @@ html {
 
 body {
  font-family: "Poppins", Arial, sans-serif;
-  background: #f7dce4;
+  background: #f0e2ea;
   color: #1f1f1f;
 }
 
@@ -103,7 +103,7 @@ h2 {
   display: inline-block;
   margin-bottom: 25px;
   padding-bottom: 8px;
-  font-size: 25px;
+  font-size: px;
   font-weight: 600;
   color: #782b42;
 }
