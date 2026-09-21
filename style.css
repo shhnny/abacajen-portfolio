@@ -16,7 +16,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: "", Georgia, serif;
 }
 
 .intro {
@@ -62,8 +62,9 @@ h2 {
 }
 
 .intro-text .tagline {
+    font-size: 15px;
   font-style: italic;
-  color: #555750;
+  color: #3a3a3a;
 }
 
 .intro-text a {
@@ -102,7 +103,7 @@ h2 {
   display: inline-block;
   margin-bottom: 25px;
   padding-bottom: 8px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   color: #782b42;
 }
