@@ -3,515 +3,576 @@
 ========================= */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Poppins", Arial, sans-serif;
-    background: #fbfafa;
-    color: #1f1f1f;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fbfafa;
+  color: #1f1f1f;
 }
 
 h1,
 h2 {
-    font-family: Georgia, serif;
+  font-family: Georgia, serif;
 }
-
 
 /* =========================
    INTRODUCTION
 ========================= */
 
 .intro {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px;
 }
 
 .intro img {
-    width: 230px;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #ffffff;
-    box-shadow:
-        0 0 0 2px #060606,
-        0 14px 32px rgba(120, 43, 66, 0.2);
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow:
+    0 0 0 2px #060606,
+    0 14px 32px rgba(120, 43, 66, 0.2);
 }
 
 .intro-text {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 .intro-text h1 {
-    font-size: 25px;
-    line-height: 1.15;
-    margin-bottom: 15px;
+  font-size: 25px;
+  line-height: 1.15;
+  margin-bottom: 15px;
 }
 
 .intro-text p {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-
-
 .intro-text .tagline {
-    font-size: 13px;
-    font-style: italic;
-    color: #3a3a3a;
+  font-size: 13px;
+  font-style: italic;
+  color: #3a3a3a;
 }
 
 .intro-text a {
-    display: inline-block;
-    padding: 12px 20px;
-    background: #010101;
-    color: white;
-    text-decoration: none;
-    border-radius: 12px;
-    transition: background 0.25s ease, transform 0.25s ease;
+  display: inline-block;
+  padding: 12px 20px;
+  background: #010101;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
 }
 
 .intro-text a:hover {
-    background: #303030;
-    transform: translateY(-2px);
+  background: #303030;
+  transform: translateY(-2px);
 }
-
 
 /* =========================
    ABOUT
 ========================= */
 
 .about {
-    width: 90%;
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 40px;
-    background: #f5f6f3;
-    border: 1px solid #dedcd3;
-    border-radius: 16px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #f5f6f3;
+  border: 1px solid #dedcd3;
+  border-radius: 16px;
 }
 
 .about h2,
 .skills h2 {
-    display: inline-block;
-    margin-bottom: 25px;
-    padding-bottom: 8px;
-    font-size: 25px;
-    font-weight: 600;
-    color: #1c1b1b;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #1c1b1b;
 }
 
 .about p {
-    margin-bottom: 20px;
-    line-height: 1.7;
-    color: #555750;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 15px;
+  color: #555750;
 }
 
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
 .about h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .about ul {
-    margin-bottom: 20px;
-    padding-left: 20px;
-    color: #555750;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #555750;
 }
 
 .about li {
-    margin-bottom: 6px;
+  font-size: 15px;
+  margin-bottom: 6px;
 }
-
 
 /* =========================
    SKILLS
 ========================= */
 
 .skills {
-    width: 90%;
-    max-width: 1100px;
-    margin: 80px auto;
+  width: 90%;
+  max-width: 1100px;
+  margin: 80px auto;
 }
-
 
 /* 3 cards per row */
 
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
 }
-
 
 /* Outer card */
 
 .skill-card {
-    height: 200px;
-    perspective: 1000px;
+  height: 200px;
+  perspective: 1000px;
 }
-
 
 /* Inner card */
 
 .card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s ease;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
 }
-
 
 /*
     KEEPING THIS AS INSTRUCTOR REQUESTED
 */
 
 .skill-card:hover .card-inner {
-    transform: rotateY(180deg);
+  transform: rotateX(180deg);
 }
-
 
 /* Front and back */
 
 .card-front,
 .card-back {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    border-radius: 16px;
-    backface-visibility: hidden;
+  border-radius: 16px;
+  backface-visibility: hidden;
 }
-
 
 /* Front */
 
 .card-front {
-    background: #f5f6f3;
-    padding: 30px;
-    border: 1px solid #dedcd3;
+  background: #f5f6f3;
+  padding: 30px;
+  border: 1px solid #dedcd3;
 }
-
 
 /* Back */
 
 .card-back {
-    transform: rotateY(180deg);
-    padding: 20px;
-    background: #f5f6f3;
-    border: 1px solid #dedcd3;
+  transform: rotateX(180deg);
+  padding: 20px;
+  background: #f5f6f3;
+  border: 1px solid #dedcd3;
 }
-
 
 /* Back image */
 
 .card-back img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
-
 
 /* Skill text */
 
 .skill-card h3 {
-    margin-bottom: 12px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #353535;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #353535;
 }
 
 .skill-card p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #666861;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666861;
 }
-
 
 /* =========================
    PROJECTS
 ========================= */
 
 .projects {
-    width: 90%;
-    max-width: 1100px;
-    margin: 80px auto;
+  width: 90%;
+  max-width: 1100px;
+  margin: 80px auto;
 }
 
 .projects h2 {
-    margin-bottom: 40px;
-    font-size: 25px;
-    font-weight: 600;
-    color: #060606;
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #060606;
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-
 
 /* Project card */
 
 .project-card {
-    background: #f5f6f3;
-    border: 1px solid #dedcd3;
-    border-radius: 16px;
-    overflow: hidden;
+  background: #f5f6f3;
+  border: 1px solid #dedcd3;
+  border-radius: 16px;
+  overflow: hidden;
 }
-
 
 /* Project image */
 
 .project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
-
 
 /* Project information */
 
 .project-info {
-    padding: 25px;
+  padding: 25px;
 }
 
 .project-type {
-    font-size: 11px;
-    letter-spacing: 1px;
-    color: #2e2d2e;
-    margin-bottom: 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #2e2d2e;
+  margin-bottom: 10px;
 }
 
 .project-info h3 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 12px;
-    color: #353434;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #353434;
 }
 
 .project-info p {
-    line-height: 1.6;
-    color: #555750;
+  line-height: 1.6;
+  color: #555750;
 }
 
 .technologies {
-    margin-top: 15px;
-    font-size: 11px;
+  margin-top: 15px;
+  font-size: 11px;
 }
-
 
 /* View Project button */
 
 .project-link {
   font-size: 13px;
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 14px;
-    background: #1c1b1b;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.25s ease;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 14px;
+  background: #1c1b1b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.25s ease;
 }
 
 .project-link:hover {
-    background: #454545;
-    transform: translateY(-2px);
+  background: #454545;
+  transform: translateY(-2px);
 }
-
 
 /* =========================
    PROJECT PAGES
 ========================= */
 
 .project-page {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-
 
 /* Header */
 
 .project-header {
-    padding: 30px 0;
-    border-bottom: 1px solid #dedcd3;
+  padding: 30px 0;
+  border-bottom: 1px solid #dedcd3;
 }
 
 .back-link {
-    color: #404040;
-    text-decoration: none;
-    font-size: 14px;
+  color: #404040;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .back-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /* Project introduction */
 
 .project-intro {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 .project-intro h1 {
-    font-size: 28px;
-    color: #000000;
-    margin-bottom: 20px;
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 20px;
 }
 
 .project-description {
-    max-width: 700px;
-    font-size: 15px;
-    line-height: 1.7;
-    color: #555750;
+  max-width: 700px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555750;
 }
-
 
 /* Project details */
 
 .project-details {
-    display: flex;
-    gap: 80px;
-    margin-top: 50px;
+  display: flex;
+  gap: 80px;
+  margin-top: 50px;
 }
 
 .project-details div {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .project-details span {
-    font-size: 11px;
-    letter-spacing: 1px;
-    color: #777;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #777;
 }
 
 .project-details strong {
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 }
-
 
 /* Project gallery */
 
 .project-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-bottom: 80px;
 }
 
 .project-gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
-    border: 1px solid #dedcd3;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #dedcd3;
 }
-
 
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 900px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .skills-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .projects-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 640px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 60px 24px;
+  }
 
-    .intro {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-        padding: 60px 24px;
-    }
+  .intro img {
+    width: 200px;
+    height: 200px;
+  }
 
-    .intro img {
-        width: 200px;
-        height: 200px;
-    }
+  .intro-text h1 {
+    font-size: 32px;
+  }
 
-    .intro-text h1 {
-        font-size: 32px;
-    }
+  .about {
+    padding: 28px 22px;
+  }
 
-    .about {
-        padding: 28px 22px;
-    }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
 
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
+  .project-details {
+    flex-direction: column;
+    gap: 25px;
+  }
 
-    .project-details {
-        flex-direction: column;
-        gap: 25px;
-    }
+  .project-intro {
+    padding: 50px 0;
+  }
 
-    .project-intro {
-        padding: 50px 0;
-    }
+  .project-intro h1 {
+    font-size: 45px;
+  }
 
-    .project-intro h1 {
-        font-size: 45px;
-    }
+  .project-description {
+    font-size: 16px;
+  }
 
-    .project-description {
-        font-size: 16px;
-    }
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
 
-    .project-gallery {
-        grid-template-columns: 1fr;
-    }
+/* =========================
+   EDUCATION & EXPERIENCE
+========================= */
 
+.education {
+  font-size: 15px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 100px auto;
+}
+
+.education h2 {
+  margin-bottom: 35px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #060606;
+}
+
+/* Table wrapper */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: #f5f6f3;
+  border: 1px solid #dedcd3;
+  border-radius: 16px;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table headings and cells */
+
+th,
+td {
+  padding: 20px 24px;
+  text-align: left;
+}
+
+/* Header */
+
+th {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid #dedcd3;
+}
+
+/* Table data */
+
+td {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555750;
+  border-bottom: 1px solid #dedcd3;
+}
+
+/* Remove border from the last row */
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* First column */
+
+td:first-child {
+  color: #2f2f2f;
+  font-weight: 500;
+}
+
+/* Row hover */
+
+tbody tr {
+  transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+  background: #f1eff0;
 }
